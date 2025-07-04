@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Mateo Molina</title>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/about.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -26,36 +27,81 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero about-hero">
         <div class="hero-content">
-            <h1>About Me</h1>
-            <p>Passionate about crafting technology for good.</p>
+            <h1>About Mateo</h1>
+            <p>Driven by curiosity. Fueled by technology. Focused on impact.</p>
         </div>
     </section>
 
-    <main>
-        <section class="about">
-            <div class="card">
-                <p>
-                    I am Mateo Molina, a software engineer and researcher dedicated to advancing education and
-                    technology. My journey started with a fascination for how people learn and how machines can help us
-                    learn better. Over the years, I’ve led teams, contributed to open-source projects, and published
-                    research on educational technologies, machine learning, and the Internet of Things.
-                </p>
+    <main class="about-main">
+
+        <section class="who-i-am">
+            <h2>Who I Am</h2>
+            <p>
+                I’m Mateo Molina, a software engineer, researcher, and lifelong learner. My passion lies in designing
+                technologies that are not only innovative but also meaningful — empowering people, fostering
+                communities, and improving lives.
+            </p>
+        </section>
+
+        <section class="vision-mission">
+            <h2>Vision & Mission</h2>
+            <div class="vision-mission-grid">
+                <div>
+                    <h3>Vision</h3>
+                    <p>
+                        To create technologies that make the future more inclusive, sustainable, and intelligent.
+                    </p>
+                </div>
+                <div>
+                    <h3>Mission</h3>
+                    <p>
+                        To innovate at the intersection of education, AI, and IoT, building platforms and tools that
+                        empower everyone to learn, create, and thrive.
+                    </p>
+                </div>
             </div>
         </section>
+
+        <section class="timeline">
+            <h2>Timeline</h2>
+            <ul>
+                <li><strong>2021</strong> — Joined MIT App Inventor as Lead Engineer</li>
+                <li><strong>2023</strong> — Published groundbreaking research on adaptive learning systems</li>
+                <li><strong>2024</strong> — Founded open-source community for IoT Education</li>
+                <li><strong>2025</strong> — Building next-gen educational AI platform</li>
+            </ul>
+        </section>
+
+        <section class="technologies">
+            <h2>Technologies I Love</h2>
+            <div class="tech-grid">
+                <div>Machine Learning</div>
+                <div>Internet of Things</div>
+                <div>Knowledge Graphs</div>
+                <div>Semantic Web</div>
+                <div>Cloud Computing</div>
+                <div>Human-Centered AI</div>
+            </div>
+        </section>
+
+        <section class="join-me">
+            <h2>Join Me</h2>
+            <p>
+                If you share my vision or just want to connect over a good cup of coffee (or wine 🍷), don’t hesitate to
+                reach out. Together, we can build something extraordinary.
+            </p>
+            <a href="mailto:mateo@example.com" class="btn">Contact Me</a>
+        </section>
+
     </main>
 
     <footer>
         &copy; 2025 Mateo Molina. All rights reserved.
     </footer>
 
-    <script>
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            header.style.transform = window.scrollY > 50 ? 'translateY(0)' : 'translateY(-100%)';
-        });
-    </script>
+    <script src="JS/about.js"></script>
 </body>
 
 </html>
