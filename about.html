@@ -4,33 +4,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mateo's</title>
-    <link rel="stylesheet" href="CSS/about.css">
+    <title>About - Mateo Molina</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Mateo Molina’s Webspace</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="wine.html">Wine Tastings</a></li>
-                <li><a href="foaf.html">FOAF</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="logo">Mateo Molina Gonzalez</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="wine.html">Wine</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="card">
-            <h2>About Me</h2>
-            <p>This page contains more information about Mateo Molina, his background, and his journey as a software
-                engineer and researcher.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>About Me</h1>
+            <p>Passionate about crafting technology for good.</p>
         </div>
+    </section>
+
+    <main>
+        <section class="about">
+            <div class="card">
+                <p>
+                    I am Mateo Molina, a software engineer and researcher dedicated to advancing education and
+                    technology. My journey started with a fascination for how people learn and how machines can help us
+                    learn better. Over the years, I’ve led teams, contributed to open-source projects, and published
+                    research on educational technologies, machine learning, and the Internet of Things.
+                </p>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        &copy; 2025 Mateo Molina. All rights reserved.
+    </footer>
+
+    <script>
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            header.style.transform = window.scrollY > 50 ? 'translateY(0)' : 'translateY(-100%)';
+        });
+    </script>
 </body>
 
 </html>
