@@ -192,3 +192,144 @@ footer {
     color: #666;
     font-size: 0.9em;
 }
+
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        height: auto;
+        min-height: 60vh;
+        padding: 4rem 1rem 2rem;
+    }
+
+    .hero-content {
+        max-width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .hero .btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 1em;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .welcome {
+        margin: 1rem auto;
+    }
+
+    .welcome .content {
+        font-size: 1em;
+        line-height: 1.7;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin: 2rem auto;
+    }
+
+    .feature {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .call-to-action {
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.6em;
+    }
+
+    .call-to-action p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    header .logo {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    header nav ul li a {
+        font-size: 0.85rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 1.6em;
+    }
+
+    .hero p {
+        font-size: 0.95em;
+    }
+
+    .hero .btn {
+        font-size: 0.9em;
+    }
+
+    .welcome .content {
+        font-size: 0.95em;
+        text-align: justify;
+    }
+
+    .feature h3 {
+        font-size: 1.2em;
+    }
+
+    .feature p {
+        font-size: 0.9em;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.4em;
+    }
+
+    .call-to-action p {
+        font-size: 0.95em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        padding: 1rem;
+    }
+}
